@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIK+ - Home</title>
+    <meta name="description" content="Modern Islamic mobile web application">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="MAIK+ Logo" class="logo-image">
+                <span>MAIK+</span>
+            </div>
+            <div class="header-actions">
+                <button class="notification-btn">
+                    <i class="fas fa-bell"></i>
+                </button>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Service Icons Grid -->
+        <section class="service-grid">
+            <a href="infak.html" class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <span class="service-text">Infaq</span>
+            </a>
+            <a href="wakaf.html" class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <span class="service-text">Wakaf</span>
+            </a>
+            <a href="fidyah.html" class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-calendar-times"></i>
+                </div>
+                <span class="service-text">Fidyah</span>
+            </a>
+            <a href="van.html" class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-van-shuttle"></i>
+                </div>
+                <span class="service-text">Van Jenazah</span>
+            </a>
+            <a href="solat.html" class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mosque"></i>
+                </div>
+                <span class="service-text">Waktu Solat</span>
+            </a>
+            <!-- <a href="quran.html" class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-quran"></i>
+                </div>
+                <span class="service-text">Quran</span>
+            </a> -->
+        </section>
+
+        <!-- Feature Banner Carousel -->
+        <section class="feature-banner">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="banner-content">
+                        <h2 class="banner-title">New Feature</h2>
+                        <p class="banner-description">Try our new payment method Faster and more secure transactions</p>
+                        <div class="banner-highlight">
+                            <span class="highlight-text">Free</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="banner-content">
+                        <h2 class="banner-title">Prayer Times</h2>
+                        <p class="banner-description">Get accurate prayer times for your location with notifications</p>
+                        <div class="banner-highlight">
+                            <span class="highlight-text">Updated</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="banner-content">
+                        <h2 class="banner-title">Quran Reading</h2>
+                        <p class="banner-description">Read and listen to the Holy Quran with beautiful recitation</p>
+                        <div class="banner-highlight">
+                            <span class="highlight-text">New</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </section>
+
+        <!-- Payment Summary -->
+        <section class="payment-summary">
+            <h2 class="section-title">Pembayaran</h2>
+            <div class="payment-cards">
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="payment-info">
+                        <h3 class="payment-label">This Month</h3>
+                        <div class="payment-amount">RM 150.00</div>
+                        <div class="payment-change positive">+12.5% from last month</div>
+                    </div>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="payment-info">
+                        <h3 class="payment-label">This Year</h3>
+                        <div class="payment-amount">RM 1,250.00</div>
+                        <div class="payment-change positive">+8.3% from last year</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <!-- <section class="quick-actions">
+            <h2 class="section-title">Quick Actions</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-quran"></i>
+                    </div>
+                    <span class="action-text">Quran</span>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <span class="action-text">Prayer Times</span>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <span class="action-text">Qibla</span>
+                </div>
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <span class="action-text">Islamic Calendar</span>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Daily Reminders -->
+        <!-- <section class="daily-reminders">
+            <h2 class="section-title">Daily Reminders</h2>
+            <div class="reminder-list">
+                <div class="reminder-item">
+                    <div class="reminder-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="reminder-content">
+                        <h3>Dhikr Reminder</h3>
+                        <p>Remember Allah in your daily activities</p>
+                    </div>
+                </div>
+                <div class="reminder-item">
+                    <div class="reminder-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="reminder-content">
+                        <h3>Charity</h3>
+                        <p>Give in charity today</p>
+                    </div>
+                </div>
+                <div class="reminder-item">
+                    <div class="reminder-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="reminder-content">
+                        <h3>Read Quran</h3>
+                        <p>Read at least one page today</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <!-- Footer Menu -->
+    <footer class="footer-menu">
+        <nav class="footer-nav">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="infak.html" class="nav-item">
+                <i class="fas fa-seedling"></i>
+                <span>Infaq</span>
+            </a>
+            <a href="wakaf.html" class="nav-item">
+                <i class="fas fa-building"></i>
+                <span>Wakaf</span>
+            </a>
+            <a href="fidyah.html" class="nav-item">
+                <i class="fas fa-calendar-times"></i>
+                <span>Fidyah</span>
+            </a>
+            <a href="profile.html" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html> 

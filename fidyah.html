@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIK+ - Fidyah Calculator</title>
+    <meta name="description" content="Calculate your fidyah payment for missed fasts">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="MAIK+ Logo" class="logo-image">
+                <span>MAIK+</span>
+            </div>
+            <div class="header-actions">
+                <button class="notification-btn">
+                    <i class="fas fa-bell"></i>
+                </button>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Title Below Header -->
+        <div class="page-title-below-header">
+            <h1>Kira Fidyah</h1>
+        </div>
+
+        <div class="simple-form-container">
+            <form class="simple-form">
+                <div class="form-group">
+                    <label for="golonganSelect">Select Option 1:</label>
+                    <select id="golonganSelect" class="simple-select">
+                        <option value="">Choose an option...</option>
+                        <option value="miskin">Golongan Miskin - RM 1.00</option>
+                        <option value="sederhana">Golongan Sederhana - RM 2.50</option>
+                        <option value="kaya">Golongan Kaya - RM 5.00</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="kategoriSelect">Select Option 2:</label>
+                    <select id="kategoriSelect" class="simple-select">
+                        <option value="">Choose an option...</option>
+                        <option value="puasa">Puasa Tertinggal</option>
+                        <option value="qada">Qada Puasa</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="missedDays">Enter Number:</label>
+                    <input type="number" id="missedDays" class="simple-input" placeholder="Enter a number..." min="1" max="365">
+                </div>
+
+                <button type="button" id="calculateBtn" class="simple-calculate-btn">
+                    Kira
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Menu -->
+    <footer class="footer-menu">
+        <nav class="footer-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="infak.html" class="nav-item">
+                <i class="fas fa-seedling"></i>
+                <span>Infaq</span>
+            </a>
+            <a href="wakaf.html" class="nav-item">
+                <i class="fas fa-building"></i>
+                <span>Wakaf</span>
+            </a>
+            <a href="fidyah.html" class="nav-item active">
+                <i class="fas fa-calendar-times"></i>
+                <span>Fidyah</span>
+            </a>
+            <a href="profile.html" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        // Simple fidyah calculation logic
+        let selectedGolongan = null;
+        let selectedKategori = null;
+
+        // Golongan selection
+        document.getElementById('golonganSelect').addEventListener('change', function() {
+            selectedGolongan = this.value;
+        });
+
+        // Kategori selection
+        document.getElementById('kategoriSelect').addEventListener('change', function() {
+            selectedKategori = this.value;
+        });
+
+        // Calculate button
+        document.getElementById('calculateBtn').addEventListener('click', function() {
+            if (!selectedGolongan || !selectedKategori) {
+                alert('Please select both options first.');
+                return;
+            }
+
+            const missedDays = parseInt(document.getElementById('missedDays').value);
+            if (!missedDays || missedDays < 1) {
+                alert('Please enter a valid number of days.');
+                return;
+            }
+
+            calculateFidyah(selectedGolongan, selectedKategori, missedDays);
+        });
+
+        function calculateFidyah(golongan, kategori, days) {
+            let dailyRate = 0;
+
+            // Set daily rate based on golongan
+            switch(golongan) {
+                case 'miskin':
+                    dailyRate = 1.00;
+                    break;
+                case 'sederhana':
+                    dailyRate = 2.50;
+                    break;
+                case 'kaya':
+                    dailyRate = 5.00;
+                    break;
+            }
+
+            const totalAmount = dailyRate * days;
+            alert(`Total Fidyah: RM ${totalAmount.toFixed(2)}`);
+        }
+    </script>
+</body>
+</html>

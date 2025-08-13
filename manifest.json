@@ -1,0 +1,67 @@
+{
+    "name": "Islamic App",
+    "short_name": "Islamic",
+    "description": "Modern Islamic mobile web application with prayer times, Quran, and daily reminders",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#4CAF50",
+    "theme_color": "#4CAF50",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en",
+    "dir": "ltr",
+    "categories": ["lifestyle", "religion", "productivity"],
+    "icons": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiM0Q0FGNTAiLz4KPHBhdGggZD0iTTk2IDQ4QzY5LjQ5IDQ4IDQ4IDY5LjQ5IDQ4IDk2czIxLjQ5IDQ4IDQ4IDQ4IDQ4LTIxLjQ5IDQ4LTQ4UzEyMi41MSA0OCA5NiA0OHptMCA4MGMtMTcuNjcgMC0zMi0xNC4zMy0zMi0zMnMxNC4zMy0zMiAzMi0zMiAzMiAxNC4zMyAzMiAzMi0xNC4zMyAzMi0zMiAzMnoiIGZpbGw9IiNGRkQ3MDAiLz4KPHBhdGggZD0iTTk2IDEyOGMtMTcuNjcgMC0zMi0xNC4zMy0zMi0zMnMxNC4zMy0zMiAzMi0zMiAzMiAxNC4zMyAzMiAzMi0xNC4zMyAzMi0zMiAzMnoiIGZpbGw9IiNGRkQ3MDAiLz4KPC9zdmc+",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiM0Q0FGNTAiLz4KPHBhdGggZD0iTTI1NiAxMjhDMTg1LjMxIDEyOCAxMjggMTg1LjMxIDEyOCAyNTZzNTcuMzEgMTI4IDEyOCAxMjggMTI4LTU3LjMxIDEyOC0xMjhTMzI2LjY5IDEyOCAyNTYgMTI4em0wIDE5MmMtMzUuMzUgMC02NC0yOC42NS02NC02NHMyOC42NS02NCA2NC02NCA2NCAyOC42NSA2NCA2NC0yOC42NSA2NC02NCA2NHoiIGZpbGw9IiNGRkQ3MDAiLz4KPHBhdGggZD0iTTI1NiAzMjBjLTM1LjM1IDAtNjQtMjguNjUtNjQtNjRzMjguNjUtNjQgNjQtNjQgNjQgMjguNjUgNjQgNjQtMjguNjUgNjQtNjQgNjR6IiBmaWxsPSIjRkZENzAwIi8+Cjwvc3ZnPg==",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Prayer Times",
+            "short_name": "Prayer",
+            "description": "View daily prayer times",
+            "url": "/prayer",
+            "icons": [
+                {
+                    "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMTIiIGZpbGw9IiM0Q0FGNTAiLz4KPHBhdGggZD0iTTQ4IDQ4aDQ4djQ4SDQ4eiIgZmlsbD0iI0ZGRDcwMCIvPgo8L3N2Zz4=",
+                    "sizes": "96x96"
+                }
+            ]
+        },
+        {
+            "name": "Quran",
+            "short_name": "Quran",
+            "description": "Read the Holy Quran",
+            "url": "/quran",
+            "icons": [
+                {
+                    "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMTIiIGZpbGw9IiM0Q0FGNTAiLz4KPHBhdGggZD0iTTQ4IDQ4aDQ4djQ4SDQ4eiIgZmlsbD0iI0ZGRDcwMCIvPgo8L3N2Zz4=",
+                    "sizes": "96x96"
+                }
+            ]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzc1IiBoZWlnaHQ9IjgxMiIgdmlld0JveD0iMCAwIDM3NSA4MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzNzUiIGhlaWdodD0iODEyIiBmaWxsPSIjRThGNUVGIi8+CjxyZWN0IHdpZHRoPSIzNzUiIGhlaWdodD0iODAiIGZpbGw9IiM0Q0FGNTAiLz4KPHN2ZyB3aWR0aD0iMzc1IiBoZWlnaHQ9IjIwMCIgeT0iMTAwIiB2aWV3Qm94PSIwIDAgMzc1IDIwMCI+CjxyZWN0IHdpZHRoPSIzNzUiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiM0Q0FGNTAiLz4KPHN2ZyB3aWR0aD0iMzc1IiBoZWlnaHQ9IjIwMCIgeT0iMzIwIiB2aWV3Qm94PSIwIDAgMzc1IDIwMCI+CjxyZWN0IHdpZHRoPSIzNzUiIGhlaWdodD0iMjAwIiByeD0iMTIiIGZpbGw9IiNGRkZGRkYiLz4KPC9zdmc+",
+            "sizes": "375x812",
+            "type": "image/svg+xml",
+            "form_factor": "narrow"
+        }
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "edge_side_panel": {
+        "preferred_width": 400
+    }
+} 
