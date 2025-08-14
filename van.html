@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Jenazah - MAIK+</title>
+    <meta name="description" content="Funeral van servis directory">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="van-header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="MAIK+ Logo" class="logo-image">
+                <span>MAIK+</span>
+            </div>
+            <div class="header-actions">
+                <button class="notification-btn">
+                    <i class="fas fa-bell"></i>
+                </button>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="van-main">
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-card">
+                <h2 class="search-title">Carian</h2>
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label for="daerah">Daerah</label>
+                        <select id="daerah" class="filter-select">
+                            <option value="all">Keseluruhan</option>
+                            <option value="kedah">Kedah</option>
+                            <option value="perlis">Perlis</option>
+                            <option value="penang">Pulau Pinang</option>
+                            <option value="perak">Perak</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="masjid">Masjid</label>
+                        <select id="masjid" class="filter-select">
+                            <option value="all">Keseluruhan</option>
+                            <option value="masjid-zahir">Masjid Zahir</option>
+                            <option value="masjid-sultan">Masjid Sultan Abdul Halim</option>
+                            <option value="masjid-aziz">Masjid Al-Aziz</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- servis Listings -->
+        <section class="servis-listings">
+            <!-- Masjid Zahir servis Card -->
+            <div class="servis-card">
+                <div class="servis-header">
+                    <div class="servis-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="servis-info">
+                        <h3 class="servis-name">Masjid Zahir</h3>
+                        <p class="servis-location">Kedah</p>
+                    </div>
+                    <div class="availability-badge">
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+                
+                <div class="servis-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Alamat:</span>
+                        <span class="detail-value">Alor Setar, Kedah</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Waktu Operasi:</span>
+                        <span class="detail-value">24 Jam</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Jenis Van:</span>
+                        <span class="detail-value">Van Jenazah Standard</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Pegawai Bertugas:</span>
+                        <span class="detail-value">Ustaz Ahmad</span>
+                    </div>
+                </div>
+                
+                <div class="servis-actions">
+                    <button class="btn-contact">
+                        <i class="fas fa-phone"></i>
+                        <span>Hubungi</span>
+                    </button>
+                    <button class="btn-emergency">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Kecemasan</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Masjid Sultan Abdul Halim servis Card -->
+            <div class="servis-card">
+                <div class="servis-header">
+                    <div class="servis-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="servis-info">
+                        <h3 class="servis-name">Masjid Sultan Abdul Halim</h3>
+                        <p class="servis-location">Kedah</p>
+                    </div>
+                    <div class="availability-badge">
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+                
+                <div class="servis-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Alamat:</span>
+                        <span class="detail-value">Alor Setar, Kedah</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Waktu Operasi:</span>
+                        <span class="detail-value">24 Jam</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Jenis Van:</span>
+                        <span class="detail-value">Van Jenazah Premium</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Pegawai Bertugas:</span>
+                        <span class="detail-value">Ustaz Ismail</span>
+                    </div>
+                </div>
+                
+                <div class="servis-actions">
+                    <button class="btn-contact">
+                        <i class="fas fa-phone"></i>
+                        <span>Hubungi</span>
+                    </button>
+                    <button class="btn-emergency">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Kecemasan</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Masjid Al-Aziz servis Card -->
+            <div class="servis-card">
+                <div class="servis-header">
+                    <div class="servis-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="servis-info">
+                        <h3 class="servis-name">Masjid Al-Aziz</h3>
+                        <p class="servis-location">Kedah</p>
+                    </div>
+                    <div class="availability-badge">
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+                
+                <div class="servis-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Alamat:</span>
+                        <span class="detail-value">Sungai Petani, Kedah</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Waktu Operasi:</span>
+                        <span class="detail-value">24 Jam</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Jenis Van:</span>
+                        <span class="detail-value">Van Jenazah Standard</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Pegawai Bertugas:</span>
+                        <span class="detail-value">Ustaz Zulkifli</span>
+                    </div>
+                </div>
+                
+                <div class="servis-actions">
+                    <button class="btn-contact">
+                        <i class="fas fa-phone"></i>
+                        <span>Hubungi</span>
+                    </button>
+                    <button class="btn-emergency">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Kecemasan</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Menu -->
+    <footer class="footer-menu">
+        <nav class="footer-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="infak.html" class="nav-item">
+                <i class="fas fa-seedling"></i>
+                <span>Infaq</span>
+            </a>
+            <a href="wakaf.html" class="nav-item">
+                <i class="fas fa-building"></i>
+                <span>Wakaf</span>
+            </a>
+            <a href="fidyah.html" class="nav-item">
+                <i class="fas fa-calendar-times"></i>
+                <span>Fidyah</span>
+            </a>
+            <a href="profile.html" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
